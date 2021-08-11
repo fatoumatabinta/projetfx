@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="1028.0" style="-fx-background-color: gray;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmgmproject.ProfesseurController">
+    <stylesheets>
+        <URL value="@etudiant.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="53.0" prefWidth="1028.0" style="-fx-background-color: darkgray;">
+         <children>
+            <Label layoutX="342.0" layoutY="7.0" prefHeight="40.0" prefWidth="483.0" text="SCHOOL MGM APP VERSION V0.1 BETA" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutY="53.0" prefHeight="70.0" prefWidth="1028.0" style="-fx-background-color: green;">
+         <children>
+            <Label layoutX="188.0" layoutY="18.0" prefHeight="34.0" prefWidth="746.0" text="Bienvenue sur l'interface de Gestion des professeurs, veuillez sélectionner un menu:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <TableView fx:id="tabprofs" layoutX="362.0" layoutY="149.0" prefHeight="379.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="matprofcln" prefWidth="103.0" text="Matricule" />
+          <TableColumn fx:id="nomprofcln" prefWidth="58.0" text="Nom" />
+            <TableColumn fx:id="prenomprofcln" prefWidth="77.0" text="Prenom" />
+            <TableColumn fx:id="grpprofcln" prefWidth="60.0" text="Groupe" />
+            <TableColumn fx:id="telephoneprofcln" prefWidth="90.0" text="Filiere" />
+            <TableColumn fx:id="filiereprofcln" minWidth="4.0" prefWidth="97.0" text="Telephone" />
+        </columns>
+      </TableView>
+      <Label fx:id="matproflabel" layoutX="33.0" layoutY="207.0" text="Matricule:" />
+      <Label fx:id="nomproflabel" layoutX="33.0" layoutY="244.0" text="Nom:" />
+      <Label fx:id="prenomproflabel" layoutX="33.0" layoutY="285.0" text="Prénom:" />
+      <Label fx:id="grpproflabel" layoutX="33.0" layoutY="320.0" text="Groupe:" />
+      <Label fx:id="filiereproflabel" layoutX="34.0" layoutY="396.0" prefHeight="17.0" prefWidth="43.0" text="Filiere" />
+      <Label fx:id="telephoneproflabel" layoutX="27.0" layoutY="362.0" text="Téléphone" />
+      <TextField fx:id="matproftxt" layoutX="93.0" layoutY="203.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="nomproftxt" layoutX="93.0" layoutY="240.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="prenomproftxt" layoutX="93.0" layoutY="281.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="grpproftxt" layoutX="93.0" layoutY="316.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="filiereproftxt" layoutX="93.0" layoutY="392.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="telephoneproftxt" layoutX="93.0" layoutY="358.0" prefHeight="25.0" prefWidth="178.0" />
+      <Button fx:id="modifierprofbtn" layoutX="166.0" layoutY="436.0" mnemonicParsing="false" onAction="#updateprof" prefHeight="25.0" prefWidth="138.0" text="Modifier un professeur" />
+      <Button fx:id="supprimerprofbtn" layoutX="86.0" layoutY="473.0" mnemonicParsing="false" onAction="#supprimerprof" prefHeight="25.0" prefWidth="149.0" text="Supprimer un professeur" />
+      <Button fx:id="retourmenubtn" layoutX="72.0" layoutY="516.0" mnemonicParsing="false" onAction="#retournermenu" prefHeight="25.0" prefWidth="178.0" text="Retourner au menu principal" />
+      <Button fx:id="ajouterprofbtn" layoutX="20.0" layoutY="436.0" mnemonicParsing="false" onAction="#ajouterprofesseur" prefHeight="25.0" prefWidth="138.0" text="Ajouter un professeur" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="643.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmgmproject.FXMLDocumentController">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="643.0" style="-fx-background-color: darkgray;" />
+      <Separator layoutX="150.0" layoutY="109.0" orientation="VERTICAL" prefHeight="394.0" prefWidth="0.0" />
+      <Pane layoutY="61.0" prefHeight="49.0" prefWidth="643.0" style="-fx-background-color: green;">
+         <children>
+            <Label layoutX="120.0" layoutY="7.0" prefHeight="30.0" prefWidth="462.0" text="Bienvenue sur votre application de gestion scolaire:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Text layoutX="195.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez entrer le matricule de l'étudiant ou du professeur :" wrappingWidth="402.2314453125">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchtxt" layoutX="231.0" layoutY="220.0" prefHeight="40.0" prefWidth="329.0" text="Matricule..." />
+      <Button fx:id="searchbtn" layoutX="344.0" layoutY="294.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="40.0" prefWidth="144.0" text="Rechercher" />
+      <Button fx:id="menuetdbtn" layoutX="12.0" layoutY="185.0" mnemonicParsing="false" onAction="#ouvrirmenuetd" prefHeight="40.0" prefWidth="132.0" text="Gérer un étudiant" />
+      <Button fx:id="menuprofbtn" layoutX="14.0" layoutY="274.0" mnemonicParsing="false" onAction="#ouvrirmenuprof" prefHeight="40.0" prefWidth="132.0" text="Gérer un professeur" />
+      <Button fx:id="menugrpbtn" layoutX="12.0" layoutY="349.0" mnemonicParsing="false" onAction="#ouvrirmenugrp" prefHeight="40.0" prefWidth="132.0" text="Gérer un groupe" />
+      <Button fx:id="quitterbtn" layoutX="14.0" layoutY="418.0" mnemonicParsing="false" onAction="#quittermenu" prefHeight="40.0" prefWidth="132.0" text="Quitter l'application" />
+      <Label layoutX="142.0" layoutY="17.0" prefHeight="38.0" prefWidth="434.0" text="SCHOOL MGM APP VERSION V0.1 BETA" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="458.0" text="Ce logiciel a été developpé par Souleymane Diack et Fatoumata Binta N'diaye" textFill="WHITE" />
+   </children>
+</AnchorPane>

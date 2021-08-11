@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="647.0" style="-fx-background-color: darkgray;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmgmproject.FormgroupeController">
+    <stylesheets>
+        <URL value="@formetd.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="54.0" prefWidth="647.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="132.0" layoutY="7.0" prefHeight="38.0" prefWidth="434.0" text="SCHOOL MGM APP VERSION V0.1 BETA" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutY="54.0" prefHeight="54.0" prefWidth="647.0" style="-fx-background-color: green;">
+         <children>
+            <Label layoutX="225.0" layoutY="14.0" prefHeight="26.0" prefWidth="288.0" text="FORMULAIRE DE MISE A JOUR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Separator layoutX="94.0" layoutY="108.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="10.0" />
+      <Label fx:id="matgrplabel" layoutX="191.0" layoutY="163.0" text="Matricule:" />
+      <Label fx:id="nomgrplabel" layoutX="199.0" layoutY="201.0" text="Nom:" />
+      <Label fx:id="dategrplabel" layoutX="160.0" layoutY="236.0" text="Date de création:" />
+      <Label fx:id="nbrgrplabel" layoutX="149.0" layoutY="275.0" text="Nombres d'étudiants:" />
+      <TextField fx:id="matgrptxt" layoutX="268.0" layoutY="149.0" prefHeight="28.0" prefWidth="220.0" />
+      <TextField fx:id="nomgrptxt" layoutX="268.0" layoutY="187.0" prefHeight="28.0" prefWidth="220.0" />
+      <TextField fx:id="dategrptxt" layoutX="268.0" layoutY="230.0" prefHeight="28.0" prefWidth="220.0" />
+      <TextField fx:id="nbrgrptxt" layoutX="268.0" layoutY="269.0" prefHeight="28.0" prefWidth="220.0" />
+      <Button fx:id="edigrpbtn" layoutX="314.0" layoutY="320.0" mnemonicParsing="false" onAction="#editgroupes" prefHeight="28.0" prefWidth="128.0" text="Mettre à jour" />
+      <Label layoutX="-28.0" layoutY="254.0" prefHeight="51.0" prefWidth="173.0" rotate="-90.0" text="GROUPES" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="647.0" style="-fx-background-color: darkgray;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmgmproject.FormprofesseurController">
+    <stylesheets>
+        <URL value="@formprofesseur.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="54.0" prefWidth="647.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="162.0" layoutY="8.0" prefHeight="38.0" prefWidth="434.0" text="SCHOOL MGM APP VERSION V0.1 BETA" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutY="54.0" prefHeight="54.0" prefWidth="647.0" style="-fx-background-color: green;">
+         <children>
+            <Label layoutX="232.0" layoutY="14.0" prefHeight="26.0" prefWidth="288.0" text="FORMULAIRE DE MISE A JOUR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Separator layoutX="94.0" layoutY="108.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="10.0" />
+      <Label fx:id="matproflabel" layoutX="191.0" layoutY="163.0" text="Matricule:" />
+      <Label fx:id="nomprofabel" layoutX="199.0" layoutY="201.0" text="Nom:" />
+      <Label fx:id="prenomproflabel" layoutX="192.0" layoutY="236.0" text="Prénom:" />
+      <Label fx:id="groupeproflabel" layoutX="192.0" layoutY="275.0" text="Groupe:" />
+      <Label fx:id="telephoneproflabel" layoutX="196.0" layoutY="318.0" text="Téléphone:" />
+      <Label fx:id="filiereproflabel" layoutX="188.0" layoutY="365.0" text="Filiere:" />
+      <TextField fx:id="matproftxt" layoutX="268.0" layoutY="149.0" prefHeight="28.0" prefWidth="220.0" />
+      <TextField fx:id="nomproftxt" layoutX="268.0" layoutY="187.0" prefHeight="28.0" prefWidth="220.0" />
+      <TextField fx:id="prenomproftxt" layoutX="268.0" layoutY="230.0" prefHeight="28.0" prefWidth="220.0" />
+      <TextField fx:id="grpproftxt" layoutX="268.0" layoutY="269.0" prefHeight="28.0" prefWidth="220.0" />
+      <TextField fx:id="telephoneproftxt" layoutX="268.0" layoutY="313.0" prefHeight="28.0" prefWidth="220.0" />
+      <TextField fx:id="filiereproftxt" layoutX="268.0" layoutY="360.0" prefHeight="28.0" prefWidth="220.0" />
+      <Button fx:id="mofierprofbtn" layoutX="339.0" layoutY="403.0" mnemonicParsing="false" onAction="#editProf" prefHeight="25.0" prefWidth="95.0" text="Mettre à jour" />
+      <Label layoutX="-51.0" layoutY="269.0" prefHeight="47.0" prefWidth="212.0" rotate="-90.0" text="PROFESSEURS" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
